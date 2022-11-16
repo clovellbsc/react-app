@@ -9,5 +9,5 @@ test("renders learn react link", () => {
 test("renders text", () => {
   render(<App />);
   const linkElement = screen.getByText("Edit src/App.js and save to reload");
-  expect(linkElement).not.toBeInTheDocument();
+  expect(linkElement).toBeInTheDocument();
 });
